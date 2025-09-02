@@ -101,8 +101,50 @@
   <footer>
     <p>© 2025 SchoConnect. All rights reserved.</p>
   </footer>
+  <script>
+  const track = document.getElementById('carouselTrack');
+  const leftArrow = document.querySelector('.arrow.left');
+  const rightArrow = document.querySelector('.arrow.right');
+
+  let position = 0;
+  const cardWidth = 240; // width + gap
+  const autoScrollSpeed = 3000; // 3 seconds
+
+  function moveCarousel(direction) {
+    const maxScroll = -(track.scrollWidth - track.parentElement.clientWidth);
+    if (direction === 'left') {
+      position += cardWidth;
+      if (position > 0) position = maxScroll;
+    } else {
+      position -= cardWidth;
+      if (position < maxScroll) position = 0;
+    }
+    track.style.transform = `translateX(${position}px)`;
+  }
+
+  // Manual controls
+  leftArrow.addEventListener('click', () => {
+    moveCarousel('left');
+    resetAutoScroll();
+  });
+
+  rightArrow.addEventListener('click', () => {
+    moveCarousel('right');
+    resetAutoScroll();
+  });
+
+  // Auto-scroll
+  let autoScroll = setInterval(() => moveCarousel('right'), autoScrollSpeed);
+
+  function resetAutoScroll() {
+    clearInterval(autoScroll);
+    autoScroll = setInterval(() => moveCarousel('right'), autoScrollSpeed);
+  }
+</script>
+
 </body>
 </html>
+
 
 
 
