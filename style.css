@@ -344,6 +344,22 @@ a:hover {
   background: #fafafa;
   border-top: 1px solid #ddd;
 }
+.email-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0073e6;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.email-btn:hover {
+  background: #005bb5;
+}
+
+
 
 
 
