@@ -322,7 +322,7 @@ a:hover {
   width: 100%;
   padding: 15px;
   font-size: 1rem;
-  font-weight: bold;   /* 👈 This makes the text bold */
+  font-weight: bold;
   text-align: left;
   background: #fff;
   border: none;
@@ -331,9 +331,8 @@ a:hover {
   transition: background 0.3s;
   color: #222;   /* 👈 Dark text */
 }
+
  
-
-
 
 .faq-question:hover {
   background: #f1f1f1;
@@ -344,9 +343,11 @@ a:hover {
   padding: 15px;
   background: #fafafa;
   border-top: 1px solid #ddd;
-  color: #222;   /* 👈 Dark text */
+  color: #333;   /* 👈 Slightly softer dark text */
 }
-.email-btn {
+
+
+email-btn {
   display: inline-block;
   padding: 10px 20px;
   background: #0073e6;
@@ -360,6 +361,7 @@ a:hover {
 .email-btn:hover {
   background: #005bb5;
 }
+
 
 
 
