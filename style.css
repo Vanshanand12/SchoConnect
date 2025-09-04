@@ -329,6 +329,7 @@ a:hover {
   cursor: pointer;
   outline: none;
   transition: background 0.3s;
+  color: #222;   /* 👈 Dark text */
 }
  
 
@@ -343,6 +344,7 @@ a:hover {
   padding: 15px;
   background: #fafafa;
   border-top: 1px solid #ddd;
+  color: #222;   /* 👈 Dark text */
 }
 .email-btn {
   display: inline-block;
@@ -358,6 +360,7 @@ a:hover {
 .email-btn:hover {
   background: #005bb5;
 }
+
 
 
 
