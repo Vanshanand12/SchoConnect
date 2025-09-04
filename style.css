@@ -322,15 +322,31 @@ a:hover {
   width: 100%;
   padding: 15px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: left;
+  color: #333;
   background: #fff;
   border: none;
+  border-bottom: 1px solid #ddd;
   cursor: pointer;
   outline: none;
-  transition: background 0.3s;
-  color: #222;   /* 👈 Dark text */
+  display: flex;                /* 👈 ensures arrow and text align */
+  justify-content: space-between;
+  align-items: center;          /* 👈 keeps arrow centered vertically */
+  transition: background 0.3s, color 0.3s;
 }
+
+.faq-question::after {
+  content: "▼";
+  font-size: 0.9rem;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+  transform: rotate(180deg);    /* 👈 flips arrow */
+}
+
 
  
 
@@ -369,6 +385,7 @@ email-btn {
 .email-btn:hover {
   background: #005bb5;
 }
+
 
 
 
