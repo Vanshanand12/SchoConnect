@@ -197,26 +197,25 @@ We also encourage parents to join the session! We know your mom wants to know wh
   </div>
 </section>
   <script>
-  const faqQuestions = document.querySelectorAll('.faq-question');
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-  faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-      const answer = question.nextElementSibling;
-
-      // Close all other answers
-      document.querySelectorAll('.faq-answer').forEach(ans => {
-        if (ans !== answer) {
-          ans.classList.remove('open');
-          ans.previousElementSibling.classList.remove('active');
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      // close all other open FAQs
+      faqQuestions.forEach((btn) => {
+        if (btn !== question) {
+          btn.classList.remove("active");
+          btn.nextElementSibling.classList.remove("open");
         }
       });
 
-      // Toggle current one
-      answer.classList.toggle('open');
-      question.classList.toggle('active');
+      // toggle current FAQ
+      question.classList.toggle("active");
+      question.nextElementSibling.classList.toggle("open");
     });
   });
 </script>
+
    <footer>
     <p>© 2025 SchoConnect. All rights reserved.</p>
   </footer>
@@ -224,6 +223,7 @@ We also encourage parents to join the session! We know your mom wants to know wh
 
 </body>
 </html>
+
 
 
 
