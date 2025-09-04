@@ -339,11 +339,19 @@ a:hover {
 }
 
 .faq-answer {
-  display: none;
-  padding: 15px;
+  .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;        /* Keep horizontal padding */
   background: #fafafa;
   border-top: 1px solid #ddd;
-  color: #333;   /* 👈 Slightly softer dark text */
+  color: #333;
+}
+
+.faq-answer.open {
+  max-height: 300px;      /* Adjust if answers are long */
+  padding: 15px;          /* Restore padding when open */
 }
 
 
@@ -361,6 +369,7 @@ email-btn {
 .email-btn:hover {
   background: #005bb5;
 }
+
 
 
 
