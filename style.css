@@ -447,45 +447,54 @@ a:hover {
 
 
 
+/* ---------- Footer ---------- */
 
-/* Footer Section */
-.footer {
-  background-color: #fff0db;
-  font-family: Arial, sans-serif;
-  color: #333;
+.site-footer {
+  background-color: #ffffff; /* match the site background, or slightly off-white */
+  color: #333333; /* dark grey, adjust if your text is lighter/darker */
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif; /* or whatever font you're using */
 }
 
-.footer-top {
+.footer-content {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 30px 50px 20px;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.footer-column h4 {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
 }
 
-.footer-column ul {
+.footer-section h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-column ul li {
-  margin-bottom: 6px;
+.footer-section ul li {
+  margin-bottom: 8px;
 }
 
-.footer-column ul li a {
-  color: #333;
+.footer-section ul li a {
+  color: #333333;
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.3s;
 }
 
-.footer-column ul li a:hover {
-  color: #f36b21;
+.footer-section ul li a:hover {
+  color: #f36b21; /* or whatever accent color you use */
 }
 
 .social-icons {
@@ -495,53 +504,48 @@ a:hover {
 }
 
 .social-icons a {
-  color: black;
-  transition: color 0.3s ease;
+  color: #333333;
+  transition: color 0.3s;
 }
 
 .social-icons a:hover {
   color: #f36b21;
 }
 
-.footer-column p {
-  font-size: 13px;
-  margin-bottom: 8px;
-}
-
 .newsletter-form {
   display: flex;
-  gap: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.newsletter-form input {
-  padding: 8px;
-  border: 1px solid #ccc;
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #cccccc;
   border-radius: 4px;
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .newsletter-form button {
-  background-color: #f36b21;
-  color: #fff;
+  padding: 10px 20px;
+  background-color: #f36b21; /* accent color */
+  color: #ffffff;
   border: none;
-  padding: 8px 15px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .newsletter-form button:hover {
-  background-color: #d95918;
+  background-color: #d95918; /* slightly darker for hover */
 }
 
 .footer-bottom {
-  text-align: left;
-  background: #f36b21;
-  color: white;
-  padding: 8px 10px;
-  font-size: 13px;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  border-top: 1px solid #e0e0e0; /* subtle line */
+  margin-top: 20px;
+  color: #777777;
+  background: #fafafa; /* light contrast */
 }
-
-
-
 
