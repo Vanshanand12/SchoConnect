@@ -543,12 +543,14 @@ a:hover {
   text-align: center;
   padding: 15px 10px;
   font-size: 14px;
-  border-top: 1px solid #e0e0e0; /* subtle line */
   margin-top: 20px;
-  color: #777777;
-  background: #FAF3E0;
-color: #22486D; /* dark blue text for readability */
+  color: #ffffff;        /* white text */
+  background: #22486D;   /* your website background blue */
+  border-top: none;      /* remove the grey line, looks cleaner */
+}
+
 
 }
+
 
 
