@@ -450,10 +450,10 @@ a:hover {
 /* ---------- Footer ---------- */
 
 .site-footer {
-  background-color: #ffffff; /* match the site background, or slightly off-white */
-  color: #333333; /* dark grey, adjust if your text is lighter/darker */
+  background-color: #336699; /* lighter blue from your site color */
+  color: #ffffff; /* make all text white for contrast */
   padding: 40px 20px;
-  font-family: 'Arial', sans-serif; /* or whatever font you're using */
+  font-family: 'Arial', sans-serif;
 }
 
 .footer-content {
@@ -551,6 +551,7 @@ a:hover {
 
 
 }
+
 
 
 
