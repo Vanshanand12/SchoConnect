@@ -539,7 +539,7 @@ a:hover {
 
 /* Footer bottom bar */
 .footer-bottom {
-  background-color: #8db3d9; /* light blue strip */
+  background-color: #21476D; /*dark blue */
   color: #fff;               /* white text */
   text-align: center;
   padding: 12px 0;
@@ -555,6 +555,7 @@ a:hover {
   font-weight: bold; /* ensures bold white text */
   color: #fff;       /* keeps it white, doesn’t pick background */
 }
+
 
 
 
