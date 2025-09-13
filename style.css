@@ -537,6 +537,21 @@ a:hover {
   color: #22486D; /* makes text visible on light hover 
 }*/
 
+/* Footer bottom bar */
+.footer-bottom {
+  background-color: #8db3d9; /* light blue strip */
+  color: #fff;               /* white text */
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+
+
 
 
 
