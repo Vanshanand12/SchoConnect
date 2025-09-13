@@ -549,6 +549,13 @@ a:hover {
 
 .footer-bottom p {
   margin: 0;
+}
+
+.footer-bottom strong {
+  font-weight: bold; /* ensures bold white text */
+  color: #fff;       /* keeps it white, doesn’t pick background */
+}
+
 
 
 
