@@ -502,7 +502,7 @@ a:hover {
   justify-content:center /* centers icons under the heading*/
   gap: 12px;
   font-size: 20px;
-  margin-top: 10px;  /* space between headings and icons*/
+ /* margin-top: 10px;  /* space between headings and icons*/
 }
 
 .social-icons a {
@@ -534,70 +534,8 @@ a:hover {
 
 .newsletter-form button:hover {
   background-color: #B2EBF2;
-  color: #22486D; /* makes text visible on light hover */
-}
-.footer-bottom {
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 14px;
-  margin-top: 20px;
-  color: #ffffff;        /* white text */
-  background: #22486D;   /* your website background blue */
-  border-top: none;      /* remove the grey line, looks cleaner */
-}
-
-
-}
-
-.footer {
-  background-color: #FFB2EBF2;
-  padding: 20px 0;
-}
-
-.footer .newsletter-form input[type="email"] {
-  padding: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  flex: 1 1 auto;
-}
-
-.footer .newsletter-form button {
-  background-color: #f28c38;
-  color: #ffffff;
-}
-
-.footer .newsletter-form button:hover {
-  background-color: #B2EBF2;
-  color: #22486D;
-}
-
-.footer-bottom {
-  background-color: #1A2A44;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-}
-.footer-bottom {
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 14px;
-  margin-top: 20px;
-  color: #ffffff;        /* white text */
-  background: #22486D;   /* your website background blue */
-  border-top: none;      /* remove the grey line, looks cleaner */
-}
-
-
-}
-
-
-
-
-
-
-
+  color: #22486D; /* makes text visible on light hover 
+}*/
 
 
 
