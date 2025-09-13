@@ -499,8 +499,10 @@ a:hover {
 
 .social-icons {
   display: flex;
+  justify-content:center /* centers icons under the heading*/
   gap: 12px;
   font-size: 20px;
+  margin-top: 10px;  /* space between headings and icons*/
 }
 
 .social-icons a {
@@ -589,6 +591,7 @@ a:hover {
 
 
 }
+
 
 
 
