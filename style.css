@@ -447,18 +447,63 @@ a:hover {
 
 
 
-/* ---------- Footer ---------- */
-.footer-section h3 {
-  color: black; /* makes Social, Company, Newsletter black */
+/* Target the three footer sections and everything inside them */
+.footer .social,
+.footer .company,
+.footer .newsletter {
+  color: #000 !important;            /* text color */
 }
 
-/* Text under them black */
-.footer-section ul li,
-.footer-section a,
-.footer-section p,
-.footer-section input,
-.footer-section label {
-  color: black;
+/* Apply to common elements inside those sections */
+.footer .social *,
+.footer .company *,
+.footer .newsletter * {
+  color: #000 !important;
+  fill: #000 !important;            /* for inline SVG icons */
+  stroke: #000 !important;          /* for SVG stroke-based icons */
 }
+
+/* Ensure links in all states are black */
+.footer .social a,
+.footer .company a,
+.footer .newsletter a,
+.footer .social a:link,
+.footer .company a:link,
+.footer .newsletter a:link,
+.footer .social a:visited,
+.footer .company a:visited,
+.footer .newsletter a:visited,
+.footer .social a:hover,
+.footer .company a:hover,
+.footer .newsletter a:hover,
+.footer .social a:active,
+.footer .company a:active,
+.footer .newsletter a:active {
+  color: #000 !important;
+  text-decoration-color: #000 !important; /* if underlines use a color variable */
+}
+
+/* Inputs / placeholders */
+.footer .newsletter input,
+.footer .newsletter label,
+.footer .newsletter button {
+  color: #000 !important;
+  border-color: currentColor; /* optional: make border match text color */
+}
+.footer .newsletter input::placeholder {
+  color: #000 !important;
+  opacity: 1; /* some browsers dim placeholders */
+}
+
+/* Font-icon libs (FontAwesome etc.) */
+.footer .social i,
+.footer .company i,
+.footer .newsletter i,
+.footer .social .fa,
+.footer .company .fa,
+.footer .newsletter .fa {
+  color: #000 !important;
+}
+
 
 
