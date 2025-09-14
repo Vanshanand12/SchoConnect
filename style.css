@@ -448,4 +448,17 @@ a:hover {
 
 
 /* ---------- Footer ---------- */
+.footer-section h3 {
+  color: black; /* makes Social, Company, Newsletter black */
+}
+
+/* Text under them black */
+.footer-section ul li,
+.footer-section a,
+.footer-section p,
+.footer-section input,
+.footer-section label {
+  color: black;
+}
+
 
