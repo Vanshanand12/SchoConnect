@@ -505,5 +505,32 @@ a:hover {
   color: #000 !important;
 }
 
+/* Make footer section titles black (Social, Company, Newsletter, etc.) */
+.footer-section h4,
+.footer-section h3 {
+  color: black;
+}
+
+/* Make links, paragraphs, list items, inputs, and labels black */
+.footer-section a,
+.footer-section p,
+.footer-section li,
+.footer-section label,
+.footer-section input {
+  color: black;
+}
+
+/* Optional: make the input text black */
+.footer-section input::placeholder {
+  color: black;
+}
+
+/* Hover effect for links/icons */
+.footer-section a:hover {
+  color: #99c7f0; /* light blue hover */
+}
+
+
+
 
 
