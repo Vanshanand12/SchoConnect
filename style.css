@@ -551,6 +551,19 @@ a:hover {
 }
 
 
+.carousel-track {
+  display: flex;
+  flex-direction: row;   /* force horizontal layout */
+  align-items: flex-start;
+}
+
+.mentor-card {
+  flex: 0 0 auto;        /* prevent stretching */
+  width: 220px;          /* keep fixed card size */
+}
+
+
+
 
 
 
