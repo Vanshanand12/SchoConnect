@@ -531,6 +531,27 @@ a:hover {
 }
 
 
+/* 🎯 Special styling only for Aditya’s card */
+.aditya-card {
+  background: #e6f0ff;   /* light blue background */
+  border: 2px solid #21476d;  /* match your site’s theme */
+}
+
+.aditya-card h3 {
+  color: #21476d;   /* heading in theme blue */
+}
+
+.aditya-card .view-profile {
+  background: #1abc9c;  /* teal button (like your site buttons) */
+  color: white;
+}
+
+.aditya-card .view-profile:hover {
+  background: #148f77;
+}
+
+
+
 
 
 
