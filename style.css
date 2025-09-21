@@ -564,3 +564,26 @@ a:hover {
 
 
 
+.hero {
+  background: #ffffff;   /* white background */
+  text-align: center;
+  padding: 40px 20px;    /* spacing around text */
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #21476d;        /* dark blue for contrast */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #333;           /* dark gray text */
+}
+
+
+
+
+
