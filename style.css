@@ -564,6 +564,47 @@ a:hover {
 
 
 
+/* Logo background section */
+.logo-section {
+  background-color: #007BFF; /* Replace with your color */
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+  color: white; /* makes "SchoConnect" text white */
+}
+
+.logo-title .logo {
+  height: 50px; /* adjust logo size */
+  width: auto;
+}
+
+/* Hero section stays white */
+.hero {
+  background-color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+
+
+
+
 
 
 
