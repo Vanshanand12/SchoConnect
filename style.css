@@ -567,26 +567,25 @@ a:hover {
 .hero {
   background: #ffffff;   /* clean white background */
   text-align: center;
-  padding: 60px 20px;    /* more breathing space */
+  padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
 }
 
 .hero h2 {
-  font-size: 36px;              /* bigger heading */
-  font-weight: 700;             /* extra bold */
-  color: #000000;               /* black */
+  font-size: 36px;
+  font-weight: 700;       /* bold */
+  color: #000000;         /* pure black */
   margin-bottom: 15px;
-  letter-spacing: 0.5px;        /* adds presence */
-  text-transform: uppercase;    /* optional, for more emphasis */
+  letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
 .hero p {
-  font-size: 18px;       /* bigger to avoid fuzziness */
-  font-weight: 400;      /* normal weight looks cleaner */
-  color: #333;           /* dark gray for contrast */
+  font-size: 18px;
+  font-weight: 400;       /* normal weight for clarity */
+  color: #000000;         /* pure black */
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
@@ -597,7 +596,51 @@ a:hover {
 
 
 
+/* Fix mentor carousel layout */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;   /* hides extra cards */
+}
 
+.carousel-track {
+  display: flex;
+  flex-direction: row;    /* ✅ force horizontal layout */
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
 
+.mentor-card {
+  flex: 0 0 auto;         /* ✅ prevent stretching */
+  width: 220px;           /* fixed card size */
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
 
+.mentor-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Arrows styling */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+.arrow:hover { background: white; }
 
