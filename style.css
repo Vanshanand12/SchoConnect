@@ -572,10 +572,12 @@ a:hover {
 }
 
 .hero h2 {
-  font-size: 32px;       /* slightly bigger, sharper */
-  font-weight: 600;      /* bold for clarity */
-  color: #21476d;        /* dark blue */
+  font-size: 36px;              /* bigger heading */
+  font-weight: 700;             /* extra bold */
+  color: #000000;               /* black */
   margin-bottom: 15px;
+  letter-spacing: 0.5px;        /* adds presence */
+  text-transform: uppercase;    /* optional, for more emphasis */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -592,6 +594,7 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 
 
 
