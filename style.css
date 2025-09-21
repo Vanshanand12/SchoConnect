@@ -597,7 +597,7 @@ a:hover {
 
 
 /* Fix mentor carousel layout */
-.carousel {
+#mentors .carousel {
   position: relative;
   width: 100%;
   overflow: hidden;   /* hides extra cards */
@@ -704,5 +704,6 @@ a:hover {
   border-radius: 6px;
   text-decoration: none;
 }
+
 
 
