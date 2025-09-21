@@ -565,23 +565,34 @@ a:hover {
 
 
 .hero {
-  background: #ffffff;   /* white background */
+  background: #ffffff;   /* clean white background */
   text-align: center;
-  padding: 40px 20px;    /* spacing around text */
+  padding: 60px 20px;    /* more breathing space */
   font-family: 'Poppins', sans-serif;
 }
 
 .hero h2 {
-  font-size: 28px;
-  font-weight: 600;
-  color: #21476d;        /* dark blue for contrast */
-  margin-bottom: 10px;
+  font-size: 32px;       /* slightly bigger, sharper */
+  font-weight: 600;      /* bold for clarity */
+  color: #21476d;        /* dark blue */
+  margin-bottom: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .hero p {
-  font-size: 16px;
-  color: #333;           /* dark gray text */
+  font-size: 18px;       /* bigger to avoid fuzziness */
+  font-weight: 400;      /* normal weight looks cleaner */
+  color: #333;           /* dark gray for contrast */
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
+
 
 
 
