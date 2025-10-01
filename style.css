@@ -1288,3 +1288,42 @@ a:hover {
 */
 
 
+
+
+/* ---------- FORCE FIX (paste at very end of your CSS) ---------- */
+
+/* Reset any stray positioning/transform on the carousel & cards */
+#mentors,
+.mentors-section,
+.carousel,
+.carousel-viewport,
+.carousel-track,
+.mentor-card,
+.arrow {
+  position: static !important;
+  transform: none !important;
+  top: auto !important;
+  bottom: auto !important;
+  z-index: 0 !important;
+}
+
+/* Make FAQ always above mentors and push it down */
+.faq-section {
+  position: relative !important;
+  z-index: 9999 !important;
+  margin-top: 80px !important;    /* increase if still too close */
+  background: #fff !important;    /* ensures visible background */
+  padding-top: 8px !important;
+  clear: both !important;
+  box-sizing: border-box !important;
+}
+
+/* Also ensure faq panels are visible and not clipped */
+.faq, .faq-answer {
+  position: relative !important;
+  z-index: 10000 !important;
+}
+
+
+
+
