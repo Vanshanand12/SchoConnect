@@ -596,34 +596,6 @@ a:hover {
 
 
 
-/* Fix mentor carousel layout */
-#mentors .carousel {
-  position: relative;
-  width: 100%;
-  overflow: hidden;   /* hides extra cards */
-}
-
-.carousel-track {
-  display: flex;
-  flex-direction: row;    /* ✅ force horizontal layout */
-  gap: 20px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.mentor-card {
-  flex: 0 0 auto;         /* ✅ prevent stretching */
-  width: 220px;           /* fixed card size */
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.mentor-card:hover {
-  transform: translateY(-6px);
-}
 
 /* Arrows styling */
 .arrow {
@@ -705,5 +677,15 @@ a:hover {
   text-decoration: none;
 }
 
+
+.mentors-section {
+  margin-bottom: 60px;   /* space after mentors */
+}
+
+.faq-section {
+  margin-top: 40px;      /* push FAQ down */
+  position: relative;
+  clear: both;
+}
 
 
