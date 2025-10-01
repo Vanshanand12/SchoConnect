@@ -207,7 +207,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* Mentors Carousel */
+/* Mentors Carousel 
 #mentors {
   padding: 50px 0;
   background: #f9f9f9;
@@ -273,7 +273,7 @@ a:hover {
   font-size: 0.8rem;
 }
 
-/* Arrows */
+ Arrows 
 .arrow {
   position: absolute;
   top: 50%;
@@ -347,7 +347,7 @@ a:hover {
 
 .faq-question:hover { background: #f1f1f1; }
 
-/* IMPORTANT: no display:none here */
+ IMPORTANT: no display:none here 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -359,7 +359,7 @@ a:hover {
 }
 
 .faq-answer.open {
-  max-height: 1000px;  /* big enough for long answers */
+  max-height: 1000px;  /* big enough for long answers 
   padding: 15px;
 }
 
@@ -687,5 +687,6 @@ a:hover {
   position: relative;
   clear: both;
 }
+
 
 
