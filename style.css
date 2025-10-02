@@ -703,6 +703,8 @@ a:hover {
   padding: 40px 20px;
   background: #fff;
   position: relative;
-  z-index: 2;         /* keeps FAQ above mentors */
+  z-index: 2;  /* keeps FAQ above mentors */
+  clear: both;    /* ensures new row below mentors */
 }
+
 
