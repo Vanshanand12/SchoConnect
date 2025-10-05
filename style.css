@@ -417,4 +417,63 @@ a:hover {
 }
 
 
+/* === FAQ Section Styling (restores old clean look) === */
+.faq {
+  max-width: 700px;
+  margin: 15px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 18px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+  background: #f7f9fc;
+}
+
+.faq-answer {
+  display: none;
+  padding: 18px 24px;
+  background: #fff;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+.faq-question.active {
+  background: #f0f6ff;
+  color: #21476d;
+}
+
+/* Section heading style */
+.faq-section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #111;
+  font-weight: 700;
+}
+
+
+
 
