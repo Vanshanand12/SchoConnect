@@ -34,7 +34,7 @@ nav a {
   font-family: 'Poppins', sans-serif;
 }
 
-.hero {
+/*.hero {
   text-align: center;
   padding: 40px 20px;
 }
@@ -51,7 +51,7 @@ nav a {
   color: #f3f0f0;
   max-width: 600px;
   margin: 0 auto;
-}
+}*/
 
 .btn {
   display: inline-block;
@@ -379,5 +379,6 @@ a:hover {
 .arrow.left { left: 10px; }
 .arrow.right { right: 10px; }
 .arrow:hover { background: white; }
+
 
 
