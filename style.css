@@ -381,4 +381,40 @@ a:hover {
 .arrow:hover { background: white; }
 
 
+/* Restore clean FAQ layout */
+.faq-section {
+  position: relative;
+  margin-top: 100px;      /* spacing from mentor section */
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.faq-section .faq-item {
+  max-width: 700px;
+  margin: 10px auto;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.faq-section .faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+
 
