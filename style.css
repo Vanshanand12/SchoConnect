@@ -475,5 +475,18 @@ a:hover {
 }
 
 
+/* === Mentor Image Styling === */
+.mentor-photo {
+  display: block;
+  margin: 0 auto;          /* centers the image */
+  width: 200px;            /* adjust as needed */
+  height: 200px;           /* keeps it square */
+  object-fit: cover;       /* ensures image fits nicely */
+  border-radius: 0;        /* makes it perfectly square */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* optional, gives depth */
+}
+
+
+
 
 
