@@ -475,17 +475,29 @@ a:hover {
 }
 
 
-/* === Mentor Image Styling === */
-.mentor-photo {
-  display: block;
-  margin: 0 auto;          /* centers the image */
-  width: 200px;            /* adjust as needed */
-  height: 200px;           /* keeps it square */
-  object-fit: cover;       /* ensures image fits nicely */
-  border-radius: 0;        /* makes it perfectly square */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* optional, gives depth */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 20px;
+  justify-items: center; /* center cards horizontally */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Make the last card span a full row and center it */
+.achievements-grid .achievement-card:last-child {
+  grid-column: 1 / -1; /* spans all columns */
+}
+
+.achievement-card {
+  background-color: #f5f5f5;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+}
 
 
 
