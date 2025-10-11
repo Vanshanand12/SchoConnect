@@ -526,27 +526,22 @@ a:hover {
   }
 }
 
-/* === Talk to Mentor Button === */
+
 .talk-btn {
-  position: fixed;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #21476d;
-  color: #fff;
-  font-weight: 600;
+  display: inline-block;
+  background-color: #21476d; /* your website's primary color */
+  color: white;
   text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 50px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-  z-index: 1000;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s ease;
+  margin: 20px auto;
 }
 
 .talk-btn:hover {
-  background: #16324d;
-  transform: translateX(-50%) scale(1.05);
+  background-color: #1a3551; /* darker hover shade */
 }
-
-
-
+s
