@@ -531,7 +531,7 @@ a:hover {
   display: block;
   width: fit-content;
   margin: 30px auto;
-  background-color: #f37c1f; /* your site’s orange color */
+  background-color: #21476d; /* your site’s orange color */
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -547,3 +547,4 @@ a:hover {
   background-color: #d56912; /* darker hover */
   transform: translateY(-2px);
 }
+
