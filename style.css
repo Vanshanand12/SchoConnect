@@ -526,20 +526,27 @@ a:hover {
   }
 }
 
-/* ---- Add .talk-btn CSS here ---- */
+/* === Talk to Mentor Button === */
 .talk-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #21476d;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #21476d;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 1000;
 }
 
 .talk-btn:hover {
-    background-color: #1a3754;
+  background: #16324d;
+  transform: translateX(-50%) scale(1.05);
 }
+
 
 
