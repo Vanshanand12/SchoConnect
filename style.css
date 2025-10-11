@@ -528,20 +528,22 @@ a:hover {
 
 
 .talk-btn {
-  display: inline-block;
-  background-color: #21476d; /* your website's primary color */
-  color: white;
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  background-color: #f37c1f; /* your site’s orange color */
+  color: #fff;
   text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 25px;
+  font-weight: 600;
   font-size: 16px;
-  font-weight: 500;
+  padding: 14px 40px;
+  border-radius: 6px;
   text-align: center;
-  transition: background 0.3s ease;
-  margin: 20px auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .talk-btn:hover {
-  background-color: #1a3551; /* darker hover shade */
+  background-color: #d56912; /* darker hover */
+  transform: translateY(-2px);
 }
-s
