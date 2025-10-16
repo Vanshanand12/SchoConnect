@@ -578,3 +578,31 @@ a:hover {
   color: #f37c1f; /* your brand orange */
 }
 
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;        /* allow wrapping to next line */
+  justify-content: center; /* center align all tags */
+  gap: 10px;              /* space between tags */
+  margin-top: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  background-color: #fef4ec; /* soft orange background */
+  color: #f37c1f;             /* brand orange text */
+  font-family: 'Poppins', sans-serif; /* modern clean font */
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tags span:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  cursor: default;
+}
+
+
