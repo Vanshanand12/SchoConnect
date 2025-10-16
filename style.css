@@ -589,7 +589,9 @@ a:hover {
 
 .tags span {
   display: inline-block;
-  background-color: #fef4ec; /* soft orange background */
+  background-color: red !important;
+
+
   color: #f37c1f;             /* brand orange text */
   font-family: 'Poppins', sans-serif; /* modern clean font */
   font-weight: 600;
@@ -604,5 +606,6 @@ a:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.12);
   cursor: default;
 }
+
 
 
