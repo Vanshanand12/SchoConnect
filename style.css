@@ -560,3 +560,21 @@ a:hover {
 }
 
 
+.mentor-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mentor-link:hover .mentor-card {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Optional: Make hover match your site’s orange theme */
+.mentor-link:hover .mentor-card h3 {
+  color: #f37c1f; /* your brand orange */
+}
+
