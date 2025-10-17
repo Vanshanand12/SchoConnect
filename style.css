@@ -607,5 +607,36 @@ a:hover {
   cursor: default;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.tags span {
+  display: inline-block;
+  background: #ffffff;
+  color: #21476d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 18px;
+  border: 2px solid #21476d;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(33, 71, 109, 0.15);
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.tags span:hover {
+  background: #21476d;
+  color: #ffffff;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(33, 71, 109, 0.3);
+}
+
 
 
