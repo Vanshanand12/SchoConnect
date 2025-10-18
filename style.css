@@ -607,30 +607,5 @@ a:hover {
   cursor: default;
 }
 
-.mentors-section {
-  text-align: center;
-  margin-top: 50px;
-}
 
-.mentors-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.mentor-card {
-  text-align: center;
-  width: 180px;
-}
-
-.mentor-photo {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px; /* square with slightly rounded edges */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
-}
 
