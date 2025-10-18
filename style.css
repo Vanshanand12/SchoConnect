@@ -608,13 +608,12 @@ a:hover {
 }
 
 
-/* Mentor Section */
 .mentors-section {
   text-align: center;
   margin-top: 60px;
+  padding: 20px 0;
 }
 
-/* Carousel core layout */
 .carousel {
   position: relative;
   display: flex;
@@ -629,23 +628,33 @@ a:hover {
 
 .carousel-track {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 40px;
-  transition: transform 0.3s ease;
+  flex-wrap: wrap;
   padding: 20px 0;
 }
 
 /* Each mentor card */
 .mentor-card {
   display: flex;
-  flex-direction: column;       /* stack image → name → text */
-  align-items: center;          /* center horizontally */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
-  width: 200px;                 /* consistent card size */
+  width: 200px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .mentor-card:hover {
@@ -653,24 +662,22 @@ a:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* Mentor photo */
 .mentor-card img {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 10px;          /* square shape with soft edges */
+  border-radius: 10px;
   margin-bottom: 10px;
   display: block;
 }
 
-/* Mentor name */
 .mentor-card h3 {
   margin: 8px 0 4px;
   font-size: 1.1rem;
+  font-weight: 600;
   color: #222;
 }
 
-/* Mentor education text */
 .mentor-card p {
   font-size: 0.9rem;
   color: #555;
@@ -678,16 +685,14 @@ a:hover {
   line-height: 1.3;
 }
 
-/* Optional badge under text */
 .mentor-card .badge {
-  background-color: #f37c1f; /* your site’s orange */
+  background-color: #f37c1f;
   color: white;
   padding: 3px 8px;
   border-radius: 8px;
   font-size: 0.75rem;
 }
 
-/* Arrows */
 .carousel .arrow {
   background: none;
   border: none;
@@ -701,5 +706,3 @@ a:hover {
 .carousel .arrow:hover {
   color: #f37c1f;
 }
-
-
