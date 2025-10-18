@@ -704,6 +704,7 @@ a:hover {
 }
 
 .carousel .arrow:hover {
-  color: #f37c1f;
+  color: #21476d; /* brand blue instead of orange */
 }
+
 
