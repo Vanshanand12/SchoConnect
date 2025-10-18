@@ -686,8 +686,8 @@ a:hover {
 }
 
 .mentor-card .badge {
-  background-color: #f37c1f;
-  color: white;
+  background-color: #21476d; /* your website’s blue */
+  color: #fff;
   padding: 3px 8px;
   border-radius: 8px;
   font-size: 0.75rem;
@@ -706,3 +706,4 @@ a:hover {
 .carousel .arrow:hover {
   color: #f37c1f;
 }
+
