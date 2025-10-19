@@ -707,5 +707,36 @@ a:hover {
   color: #21476d; /* brand blue instead of orange */
 }
 
+/* --- Available Slots Section --- */
+.slots {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* space between date groups */
+  margin-top: 15px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.slots div {
+  background: #f9f9f9;
+  border: 2px solid #21476d;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 12px rgba(33, 71, 109, 0.15);
+  transition: all 0.3s ease;
+}
+
+.slots div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(33, 71, 109, 0.3);
+}
+
+.slots-title {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #21476d;
+}
+
 
 
