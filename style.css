@@ -738,7 +738,7 @@ a:hover {
   color: #21476d;
 }
 
-.university-tags {
+/*.university-tags {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -749,22 +749,4 @@ a:hover {
   justify-content: center;
   gap: 20px;
   margin-top: 10px;
-}
-/* --- Aditya Uni. Bg Color ---*/ 
-.uni-tag {
-  background: #21476d;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: .3s;
-}
-
-.uni-tag:hover {
-  background: #f37c1f;
-}
-
-
-
-
+}*/
