@@ -738,5 +738,12 @@ a:hover {
   color: #21476d;
 }
 
+.university-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+s
+
 
 
