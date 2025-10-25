@@ -146,24 +146,16 @@
   transform: scale(0.98);
   box-shadow: 0 4px 10px rgba(33, 71, 109, 0.2);
 }
-   .mentor-photo {
-  display: block;
-  margin: 0 auto;        /* centers the image */
-  width: 260px;          /* square size — change to taste */
-  height: 260px;         /* same as width => square */
-  object-fit: cover;     /* crop to fill the square, keeps face centered */
-  border-radius: 12px;   /* optional: keeps slightly rounded corners */
-  max-width: 90%;        /* keeps it responsive on very small screens */
-}
+  .mentor-photo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 260px !important;
+    height: 260px !important;
+    object-fit: cover !important;
+    border-radius: 0 !important; /* keeps it square */
+  }
 
-.mentor-photo {
-  display: block;
-  margin: 0 auto;
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 0 !important; /* removes the circle */
-}
     
   img.mentor-photo {
     display: block !important;
