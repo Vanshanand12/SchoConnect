@@ -146,15 +146,16 @@
   transform: scale(0.98);
   box-shadow: 0 4px 10px rgba(33, 71, 109, 0.2);
 }
-    ..mentor-photo {
-  object-fit: cover;
-  width: 220px;
-  aspect ratio: 9 / 16;
-  height: auto;
-  border-radius: 20px;
+   .mentor-photo {
   display: block;
-  margin: 0 auto; /* ✅ ensures the image is centered */
+  margin: 0 auto;        /* centers the image */
+  width: 260px;          /* square size — change to taste */
+  height: 260px;         /* same as width => square */
+  object-fit: cover;     /* crop to fill the square, keeps face centered */
+  border-radius: 12px;   /* optional: keeps slightly rounded corners */
+  max-width: 90%;        /* keeps it responsive on very small screens */
 }
+
 
 
   </style>
