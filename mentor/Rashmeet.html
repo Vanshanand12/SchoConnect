@@ -1,52 +1,220 @@
-<section id="rashmeet-profile" class= "mentor-profile">
-  <div class="mentor-container">
-    <div class="mentor-image">
-      <!-- Replace this placeholder image with Rashmeet's actual image -->
-      <img src="images/rashmeet-placeholder.jpg" alt="Rashmeet Kaur">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Rashmeet Kaur - Mentor Profile</title>
+  <style>
+    body {
+      font-family: 'Sora', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .profile-header {
+      text-align: center;
+    } 
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 0; /* keep square */
+      margin: 15px 0;
+      object-fit: cover;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #222;
+    }
+    details {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .highlight {
+      background: #ffe9c9;
+      padding: 10px;
+      border-left: 5px solid orange;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+    .support-section {
+      background: #f3e9ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .support-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .support-section li {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+    .support-section li span {
+      margin-right: 10px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #ffffff;
+      color: #21476d;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 18px;
+      border: 2px solid #21476d;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.15);
+      transition: all 0.25s ease;
+      cursor: default;
+    }
+
+    .tags span:hover {
+      background: #21476d;
+      color: #ffffff;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(33, 71, 109, 0.3);
+    }
+
+    .highlight h2 {
+      text-align: center;
+      width: 100%;
+    }
+
+    /* --- Talk Button --- */
+    .talk-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      background-color: #21476d;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 40px;
+      box-shadow: 0 4px 12px rgba(33, 71, 109, 0.3);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .talk-btn:hover {
+      background-color: #1a3a59;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 24px rgba(33, 71, 109, 0.4);
+    }
+
+    .talk-btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.2);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <h1>Rashmeet Kaur</h1>
+      <p>Sri Guru Gobind Singh College of Commerce, University of Delhi<br>Bachelor of Commerce (Hons)</p>
+      <img src="images/rashmeet-placeholder.jpg" alt="Rashmeet Kaur" class="mentor-photo">
     </div>
 
-    <div class="mentor-info">
-      <h2>Rashmeet Kaur</h2>
-      <p class="mentor-role">Mentor | Operations & Communications</p>
-
-      <p class="mentor-bio">
-        I am a B.Com (Hons) student at <strong>Sri Guru Gobind Singh College of Commerce, University of Delhi</strong>, passionate about 
-        growth, communication, and creating impact through structured initiatives. 
-        Having worked across <strong>operations, public relations, and leadership roles</strong>, I’ve developed a deep interest in 
-        building meaningful collaborations and empowering others to reach their potential.
-      </p>
-
-      <p class="mentor-reason">
-        I wanted to take up the role of a mentor because I genuinely enjoy being a student again. 
-        Having recently gone through similar experiences, I understand the mix of excitement and confusion that comes with it. 
-        Mentoring, for me, is a two-way journey — while I share insights and guidance, I also learn from the fresh perspectives 
-        and ideas of students.
-      </p>
-
-      <a href="../book-call.html" class="talk-btn">💬 Talk to Rashmeet</a>
-
-      <div class="mentor-achievements">
-        <h3>Achievements</h3>
-        <ul>
-          <li>Production Director at SGGSCC’s Annual Magazine <strong>Vismit 5.0</strong>, leading a 20-member team.</li>
-          <li>Operations Associate at <strong>DOT</strong> — managed partnerships with 500+ student communities.</li>
-          <li>Raised ₹35,000 in sponsorships through cold outreach and negotiations.</li>
-          <li>Founded a <strong>women-focused lifestyle blog</strong> growing to 80+ monthly visitors.</li>
-          <li>Ranked <strong>7th out of 1380</strong> participants in SRCC’s Consult Blitz 5.0 competition.</li>
-          <li>Certified in <strong>Digital Marketing (SkillCircle)</strong>, <strong>Human Resource Associate (HRCI)</strong>, and 
-              <strong>Risk Management (UCI Irvine)</strong>.</li>
-        </ul>
-      </div>
-
-      <div class="mentor-hobbies">
-        <h3>Hobbies & Interests</h3>
-        <ul>
-          <li>Classical music enthusiast — holds a <strong>Junior Diploma in Indian Classical Sangeet</strong>.</li>
-          <li>Runs a <strong>women-focused lifestyle blog</strong> alongside her academic and professional journey.</li>
-          <li>Enjoys <strong>writing</strong> during reflective or creative moments.</li>
-        </ul>
-      </div>
+    <!-- Achievements -->
+    <div class="tags">
+      <span>Production Director - Vismit 5.0 (SGGSCC)</span>
+      <span>Operations Associate - DOT</span>
+      <span>Raised ₹35,000 Sponsorships</span>
+      <span>Founder - Women-Focused Lifestyle Blog</span>
+      <span>Consult Blitz (SRCC) - Rank 7/1380</span>
     </div>
+
+    <!-- Intro -->
+    <div class="highlight">
+      <h2>👋 Hi! I'm Rashmeet</h2>
+      <p>
+        I’m a passionate <strong>B.Com (Hons)</strong> student from Delhi University, deeply engaged in communication, operations, and leadership. 
+        Through my experiences across multiple internships, I’ve honed my skills in public relations, marketing, and project management — 
+        blending creativity with strategic execution.
+      </p>
+    </div>
+
+    <!-- Education & Experience -->
+    <h2>📘 Education & Experience Highlights</h2>
+    <details>
+      <summary>Operations Associate, DOT</summary>
+      <p>Built partnerships with 500+ student communities and generated high-potential leads by pitching the Campus Memo Program.</p>
+    </details>
+    <details>
+      <summary>Production Director, Vismit 5.0</summary>
+      <p>Led a 20-member content and design team for SGGSCC’s annual commerce magazine, managing the full publishing workflow.</p>
+    </details>
+    <details>
+      <summary>Public Relations Intern, PRY Decors</summary>
+      <p>Executed structured outreach campaigns and co-created digital brochures that boosted brand visibility by 30–40%.</p>
+    </details>
+
+    <!-- Reason to Mentor -->
+    <h2>💬 Why I Mentor</h2>
+    <p>
+      I wanted to take up the role of a mentor because I genuinely enjoy being a student again. 
+      Having recently gone through the same phase, I understand the blend of excitement and confusion that comes with it. 
+      I see mentoring as a two-way process — sharing my experiences while learning from the fresh ideas of students.
+    </p>
+
+    <!-- Support Section -->
+    <div class="support-section">
+      <h2>🛠 Support I Can Provide</h2>
+      <p><i>Here’s how I can support you as your mentor:</i></p>
+      <ul>
+        <li><span>🎯</span> Communication, PR & Content Strategy</li>
+        <li><span>🤝</span> Career & Internship Guidance</li>
+        <li><span>🧩</span> Operations and Team Leadership Insights</li>
+        <li><span>💡</span> Personal Growth & Self-Branding Mentorship</li>
+      </ul>
+    </div>
+
+    <!-- Hobbies & Interests -->
+    <h2>🎵 Hobbies & Interests</h2>
+    <p>
+      I’m keenly interested in <strong>classical music</strong> and hold a Junior Diploma in Indian Classical Sangeet.  
+      Alongside my academic and professional journey, I run a <strong>women-focused lifestyle blog</strong> and 
+      often find peace in <strong>writing</strong> during reflective moments.
+    </p>
+
+    <p style="margin-top:20px; text-align:center; color:#555;">
+      👉 Whether you’re exploring communication, self-growth, or academic guidance — I’d be glad to share my journey with you.
+    </p>
   </div>
-</section>
 
+  <a href="../book-call.html" class="talk-btn">💬 Talk to Rashmeet</a>
+</body>
+</html>
