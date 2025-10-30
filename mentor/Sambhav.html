@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Sambhav's Mentor Profile</title>
+  <style>
+    body {
+      font-family: 'Sora', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .profile-header {
+      text-align: center;
+    }
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 15px 0;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #222;
+    }
+    details {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .highlight {
+      background: #ffe9c9;
+      padding: 10px;
+      border-left: 5px solid orange;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+    .support-section {
+      background: #f3e9ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .support-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .support-section li {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+    .support-section li span {
+      margin-right: 10px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #ffffff;
+      color: #21476d;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 18px;
+      border: 2px solid #21476d;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.15);
+      transition: all 0.25s ease;
+      cursor: default;
+    }
+
+    .tags span:hover {
+      background: #21476d;
+      color: #ffffff;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(33, 71, 109, 0.3);
+    }
+
+    .highlight h2 {
+      text-align: center;
+      width: 100%;
+    }
+
+    /* --- Talk to Sambhav button --- */
+    .talk-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      background-color: #21476d;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 40px;
+      box-shadow: 0 4px 12px rgba(33, 71, 109, 0.3);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .talk-btn:hover {
+      background-color: #1a3a59;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 24px rgba(33, 71, 109, 0.4);
+    }
+
+    .talk-btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.2);
+    }
+
+    img.mentor-photo {
+      display: block !important;
+      margin: 0 auto !important;
+      width: 150px !important;
+      height: 150px !important;
+      object-fit: cover !important;
+      border-radius: 0 !important; /* makes it square */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <h1>Sambhav Jain</h1>
+      <p>SGTB Khalsa College, Delhi University<br>B.Com (Program) | Pursuing Chartered Accountancy</p>
+
+      <img src="images/sambhav-photo.jpeg" alt="Sambhav Jain Photo" class="mentor-photo">
+    </div>
+
+    <!-- Achievements -->
+    <div class="tags">
+      <span>10th CBSE - 99.2%</span>
+      <span>12th CBSE - 95.6%</span>
+      <span>CA Foundation - Passed with Distinction</span>
+      <span>Economics Exemption in CA Foundation</span>
+      <span>CTF Gold Medalist (Intl. Commerce Olympiad)</span>
+      <span>IPU-CET All India Rank 154</span>
+      <span>CUET Score - 752/800</span>
+    </div>
+
+    <!-- Intro -->
+    <div class="highlight">
+      <h2>👋 Hi! I'm Sambhav</h2>
+      <p>
+        I'm <strong>Sambhav Jain</strong>, a Bachelor of Commerce student at <strong>SGTB Khalsa College, Delhi University</strong>,
+        with a strong passion for accounting and finance. Currently pursuing the <strong>Chartered Accountancy</strong> path,
+        I have interned as a consultant at two companies, where I gained exposure to solving business challenges and working
+        on diverse projects.
+        <br><br>
+        These experiences, along with my academic journey, have strengthened my analytical mindset and adaptability.
+        Having learned from both classroom knowledge and real-world application, I’m committed to mentoring students —
+        helping them navigate academics, build essential skills, and make confident career choices.
+      </p>
+    </div>
+
+    <!-- Why Mentorship Matters -->
+    <h2>🌱 Why Mentorship Matters</h2>
+    <p>
+      As you step into college, you’ll find yourself surrounded by new opportunities, challenges, and choices.
+      Mentorship matters because it provides a guiding hand through this transition — helping you move from confusion
+      to clarity. A mentor helps you avoid common mistakes, uncover hidden opportunities, and make informed decisions
+      rather than relying solely on trial and error.
+      <br><br>
+      It creates a strong support system that empowers students to unlock their potential, navigate college life
+      effectively, and prepare for the world beyond. You’ll still make your own journey — but mentorship ensures
+      you won’t have to figure it all out alone.
+    </p>
+
+    <!-- Support Section -->
+    <div class="support-section">
+      <h2>🧭 Support I Can Provide</h2>
+      <ul>
+        <li><span>📘</span> Guidance for Commerce & CA pathways</li>
+        <li><span>💬</span> Mentorship for academic and career clarity</li>
+        <li><span>📈</span> Skill-building and productivity planning</li>
+        <li><span>🤝</span> Navigating college transitions with confidence</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:20px; text-align:center; color:#555;">
+      👉 Need help with college decisions, academics, or understanding CA pathways? I’d be happy to share my experiences and guide you!
+    </p>
+  </div>
+
+  <a href="../book-call.html" class="talk-btn">💬 Talk to Sambhav</a>
+</body>
+</html>
 
