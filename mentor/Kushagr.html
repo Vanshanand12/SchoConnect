@@ -6,46 +6,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Kushagr's Mentor Profile</title>
+  <style>
+    body {
+      font-family: 'Sora', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .profile-header {
+      text-align: center;
+    } 
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 0; /* square image */
+      object-fit: cover;
+      margin: 15px 0;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #222;
+    }
+    details {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .highlight {
+      background: #ffe9c9;
+      padding: 10px;
+      border-left: 5px solid orange;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+    .support-section {
+      background: #f3e9ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .support-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .support-section li {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+    .support-section li span {
+      margin-right: 10px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+    .tags span {
+      display: inline-block;
+      background: #ffffff;
+      color: #21476d;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 18px;
+      border: 2px solid #21476d;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.15);
+      transition: all 0.25s ease;
+      cursor: default;
+    }
+    .tags span:hover {
+      background: #21476d;
+      color: #ffffff;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(33, 71, 109, 0.3);
+    }
+    .highlight h2 {
+      text-align: center;
+      width: 100%;
+    }
+    .talk-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      background-color: #21476d;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 40px;
+      box-shadow: 0 4px 12px rgba(33, 71, 109, 0.3);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .talk-btn:hover {
+      background-color: #1a3a59;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 24px rgba(33, 71, 109, 0.4);
+    }
+    .talk-btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.2);
+    }
+  </style>
 </head>
-
 <body>
-  <section class="mentor-profile">
-    <div class="profile-container">
-      <div class="profile-left">
-        <img src="images/kushagr.jpg" alt="Kushagr Grover" class="mentor-img">
-      </div>
-
-      <div class="profile-right">
-        <h1 class="mentor-name">Kushagr Grover</h1>
-        <h3 class="mentor-college">Sri Venkateshwara College</h3>
-        <h4 class="mentor-degree">B.Sc (Hons) Statistics</h4>
-
-        <p class="mentor-bio">
-          I am Kushagr, currently pursuing Statistics, but my perspective on things lies far beyond any textbook. 
-          I possess an entrepreneurial and do-it-yourself mindset, with a strong interest in numbers and data.
-        </p>
-
-        <p class="mentor-quote">
-          “Mentorship, according to me, is a crucial medium to take your next step. 
-          It’s true that we all learn from mistakes — but we can be far more efficient by learning from the 
-          mistakes already made by people where you want to be.”
-        </p>
-
-        <div class="achievements">
-          <h2>Achievements</h2>
-          <ul>
-            <li>Student Coordinator in School</li>
-            <li>Published a poetry compilation book</li>
-            <li>Secretary General of MISMUN’23</li>
-            <li>Founder at <strong>XPAND</strong> — an interactive personal finance learning and management startup, 
-                launched to deliver a holistic and one-stop app for finance applications.</li>
-          </ul>
-        </div>
-
-        <a href="#" class="talk-btn">Talk to Kushagr</a>
-      </div>
+  <div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <h1>Kushagr Grover</h1>
+      <p>Sri Venkateshwara College<br>B.Sc (Hons) Statistics</p>
+      <img src="images/kushagr.jpg" alt="Kushagr Grover" class="mentor-photo">
     </div>
-  </section>
+
+    <!-- Achievements -->
+    <div class="tags">
+      <span>Student Coordinator in School</span>
+      <span>Published a poetry compilation book</span>
+      <span>Secretary General of MISMUN’23</span>
+      <span>Founder at XPAND - Interactive personal finance startup</span>
+    </div>
+
+    <!-- Intro -->
+    <div class="highlight">
+      <h2>👋 Hi! I'm Kushagr</h2>
+      <p>
+        I am Kushagr, currently pursuing Statistics, but my perspective on things lies far beyond any textbook. 
+        I possess an entrepreneurial and do-it-yourself mindset, with a strong interest in numbers and data.
+      </p>
+      <p>
+        “Mentorship, according to me, is a crucial medium to take your next step. 
+        It’s true that we all learn from mistakes — but we can be far more efficient by learning from the 
+        mistakes already made by people where you want to be.”
+      </p>
+    </div>
+
+    <!-- Education & Experience Highlights -->
+    <h2>📘 Education & Experience Highlights</h2>
+    <details>
+      <summary>Education</summary>
+      <p>Pursuing B.Sc (Hons) Statistics at Sri Venkateshwara College.</p>
+    </details>
+    <details>
+      <summary>Projects & Entrepreneurship</summary>
+      <p>Founder of XPAND: a personal finance learning and management startup.</p>
+    </details>
+    <details>
+      <summary>Other Achievements</summary>
+      <p>Student Coordinator, Published poetry, Secretary General at MISMUN’23.</p>
+    </details>
+
+    <!-- Support Section -->
+    <div class="support-section">
+      <h2>🛠 Support I Can Provide</h2>
+      <p><i>Experience in mentorship, entrepreneurship, and academic guidance:</i></p>
+      <ul>
+        <li><span>❤️</span> Mentorship & guidance</li>
+        <li><span>📊</span> Data & analytics insights</li>
+        <li><span>💡</span> Entrepreneurship guidance</li>
+        <li><span>🤝</span> Learning from real-world experiences</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:20px; text-align:center; color:#555;">
+      👉 Curious about numbers, entrepreneurship, or personal growth? I’d be happy to share my journey and help you out!
+    </p>
+  </div>
+
+  <a href="../book-call.html" class="talk-btn">💬 Talk to Kushagr</a>
 </body>
 </html>
-
