@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Kritika Piplani - Mentor Profile</title>
+  <style>
+    body {
+      font-family: 'Sora', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .profile-header {
+      text-align: center;
+    } 
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 15px 0;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #222;
+    }
+    details {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f1f1f1;
+      border-radius: 8px;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .highlight {
+      background: #ffe9c9;
+      padding: 10px;
+      border-left: 5px solid orange;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+    .support-section {
+      background: #f3e9ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .support-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .support-section li {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+    .support-section li span {
+      margin-right: 10px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #ffffff;
+      color: #21476d;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 18px;
+      border: 2px solid #21476d;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.15);
+      transition: all 0.25s ease;
+      cursor: default;
+    }
+
+    .tags span:hover {
+      background: #21476d;
+      color: #ffffff;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(33, 71, 109, 0.3);
+    }
+
+    .talk-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      background-color: #21476d;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 40px;
+      box-shadow: 0 4px 12px rgba(33, 71, 109, 0.3);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .talk-btn:hover {
+      background-color: #1a3a59;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 24px rgba(33, 71, 109, 0.4);
+    }
+
+    .talk-btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 10px rgba(33, 71, 109, 0.2);
+    }
+
+    .mentor-photo {
+      display: block !important;
+      margin: 0 auto !important;
+      width: 150px !important;
+      height: 150px !important;
+      object-fit: cover !important;
+      border-radius: 0 !important; /* keeps it square */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <h1>Kritika Piplani</h1>
+      <p>Dehradun ➤ Delhi University ➤ IIM Kozhikode<br>MBA Candidate | Ex-Aon Consultant</p>
+      <img src="images/kritika-photo.jpeg" alt="Kritika Piplani Photo" class="mentor-photo">
+    </div>
+
+    <!-- Achievements -->
+    <div class="tags">
+      <span>AIR 14 - ICSE Class X</span>
+      <span>Top 1.5%ile in Class XII</span>
+      <span>Top 3 Rank - Delhi University</span>
+      <span>Featured in Hindustan Times</span>
+      <span>National Scholarship Recipient</span>
+    </div>
+
+    <!-- Introduction -->
+    <div class="highlight">
+      <h2>👋 Hi! I'm Kritika</h2>
+      <p>
+        From Dehradun to IIM Kozhikode, my journey reflects curiosity, discipline, and ambition.  
+        I believe learning is less about marks and more about growing every day.  
+        A B.Com (Hons.) graduate from Shaheed Bhagat Singh College, DU — I’m now pursuing my MBA at IIM Kozhikode.
+      </p>
+    </div>
+
+    <!-- Education & Experience -->
+    <h2>💼 Professional Journey</h2>
+    <details>
+      <summary>Consulting Experience</summary>
+      <p>
+        Worked 2 years with <strong>Aon Consulting</strong> as an Associate Consultant,  
+        leading 50+ projects for top tech and Fortune 500 clients in total rewards,  
+        performance management, and compensation benchmarking.
+      </p>
+    </details>
+
+    <details>
+      <summary>Key Achievements</summary>
+      <p>
+        Recognized as an <strong>Aon Star Performer</strong> for high-impact results,  
+        managing 30+ clients and generating ₹2.5M in revenue.  
+        Experienced in blending data-driven problem solving with empathy and collaboration.
+      </p>
+    </details>
+
+    <!-- Beyond Work -->
+    <h2>🎯 Beyond Work</h2>
+    <p>
+      I’m a curious soul who loves <strong>chess, travel, and creative storytelling</strong>.  
+      I’ve hosted podcasts featuring industry leaders and Shark Tank entrepreneurs and actively lead  
+      <strong>social initiatives</strong> like donation drives and sustainability projects.
+    </p>
+
+    <!-- Mentorship Intent -->
+    <div class="support-section">
+      <h2>🤝 Why I Mentor</h2>
+      <p>
+        The MBA journey can feel overwhelming — I’ve been there.  
+        My goal is to simplify it for students with clarity, confidence, and compassion.  
+        Mentorship for me is about sharing real strategies, honest experiences, and keeping spirits high.
+      </p>
+      <ul>
+        <li><span>🎓</span> MBA & CAT preparation guidance</li>
+        <li><span>💬</span> Clarity & motivation for aspirants</li>
+        <li><span>📈</span> Career strategy & growth mindset</li>
+        <li><span>❤️</span> Building self-belief through mentorship</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:20px; text-align:center; color:#555;">
+      👉 Let’s turn uncertainty into achievement — together.
+    </p>
+  </div>
+
+  <a href="../book-call.html" class="talk-btn">💬 Talk to Kritika</a>
+</body>
+</html>
 
