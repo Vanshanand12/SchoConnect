@@ -114,8 +114,8 @@ footer {
 }
 
 .logo {
-  width: 35px;
-  height: 25px;
+  width: 12px;
+  height: 15px;
   object-fit: contain;
 }
 .mentconnect-feature-card {
@@ -166,8 +166,8 @@ footer {
 }
 
 .logo-title .logo {
-  width: 35px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 #legal {
@@ -792,6 +792,7 @@ body {
   font-size: 18px;
   opacity: 0.85;
 }
+
 
 
 
