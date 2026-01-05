@@ -768,3 +768,9 @@ body {
 .logo-link:hover {
   cursor: pointer;
 }
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
