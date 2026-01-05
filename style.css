@@ -754,3 +754,8 @@ a:hover {
 .blue-text {
   color: #21476d;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
