@@ -776,7 +776,9 @@ body {
 
 .hero h2 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;   /* strong like logo */
+  font-weight: 700;  /* strong like logo */
+  font-size: 42px;   /* 🔥 increase size */
+  line-height: 1.2;
 }
 
 .hero p {
@@ -790,4 +792,5 @@ body {
   font-size: 18px;
   opacity: 0.85;
 }
+
 
