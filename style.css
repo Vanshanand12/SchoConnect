@@ -166,8 +166,8 @@ footer {
 }
 
 .logo-title .logo {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 25px;
   object-fit: contain;
 }
 #legal {
@@ -777,7 +777,7 @@ body {
 .hero h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;  /* strong like logo */
-  font-size: 52px;   /* 🔥 increase size */
+  font-size: 60px;   /* 🔥 increase size */
   line-height: 1.2;
 }
 
@@ -792,6 +792,7 @@ body {
   font-size: 18px;
   opacity: 0.85;
 }
+
 
 
 
