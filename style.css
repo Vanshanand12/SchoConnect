@@ -759,3 +759,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover {
+  cursor: pointer;
+}
