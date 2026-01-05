@@ -774,3 +774,20 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.hero h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;   /* strong like logo */
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;   /* slightly lighter for balance */
+}
+
+
+.hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
