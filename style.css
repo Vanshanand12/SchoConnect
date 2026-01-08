@@ -777,7 +777,7 @@ body {
 .hero h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;  /* strong like logo */
-  font-size: 85px;   /* 🔥 increase size */
+  font-size: 75px;   /* 🔥 increase size */
   line-height: 1.2;
 }
 
@@ -811,6 +811,7 @@ body {
 .footer-company a:hover {
   text-decoration: underline;
 }
+
 
 
 
