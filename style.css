@@ -794,45 +794,26 @@ body {
 }
 
 
-/*Comapny and Scocials wala*/
+/* ===== FOOTER FIX (GLOBAL) ===== */
 
-.footer-company {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-company a {
-  color: black;
-  text-decoration: none;
-  margin: 6px 0;   /* ek ke niche ek spacing */
-  font-size: 16px;
-}
-
-.footer-company a:hover {
-  text-decoration: underline;
-}
-
-
-footer .company-links a {
+.site-footer .company-links a {
   display: block;          /* ek ke niche ek */
-  color: black;            /* black text */
+  color: black !important; /* force black everywhere */
   text-decoration: none;
   margin: 8px 0;
   font-size: 15px;
 }
 
-footer .company-links a:hover {
+.site-footer .company-links a:hover {
   text-decoration: underline;
 }
 
+/* Social icons black */
+.site-footer .fab {
+  color: black !important;
+}
 
-
-
-
-
-
-
-
-
-
-
+/* Footer headings */
+.site-footer h4 {
+  color: white;
+}
