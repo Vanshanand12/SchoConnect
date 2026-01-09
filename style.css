@@ -813,6 +813,18 @@ body {
 }
 
 
+footer .company-links a {
+  display: block;          /* ek ke niche ek */
+  color: black;            /* black text */
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+footer .company-links a:hover {
+  text-decoration: underline;
+}
+
 
 
 
