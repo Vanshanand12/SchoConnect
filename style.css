@@ -794,26 +794,72 @@ body {
 }
 
 
-/* ===== FOOTER FIX (GLOBAL) ===== */
+/* ===== GLOBAL FOOTER (WORKS ON ALL PAGES) ===== */
 
-.site-footer .company-links a {
-  display: block;          /* ek ke niche ek */
-  color: black !important; /* force black everywhere */
+.site-footer {
+  background-color: #99c7f0;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Headings */
+.site-footer h4 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+/* Company links */
+.footer-company a {
+  display: block;              /* one below another */
+  color: black;                /* FORCE BLACK */
   text-decoration: none;
-  margin: 8px 0;
+  margin: 6px 0;
   font-size: 15px;
 }
 
-.site-footer .company-links a:hover {
+.footer-company a:hover {
   text-decoration: underline;
 }
 
-/* Social icons black */
-.site-footer .fab {
-  color: black !important;
+/* Social icons */
+.footer-social a {
+  margin-right: 12px;
+  font-size: 20px;
+  color: black;
 }
 
-/* Footer headings */
-.site-footer h4 {
-  color: white;
+.footer-social a:hover {
+  color: #21476d;
 }
+
+/* Newsletter */
+.footer-newsletter p {
+  color: black;
+  font-size: 14px;
+}
+
+.footer-newsletter input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer-newsletter button {
+  margin-top: 8px;
+  padding: 8px 15px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
