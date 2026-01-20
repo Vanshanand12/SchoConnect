@@ -883,32 +883,37 @@ body {
 }
 
 
-/* ===== Global Header ===== */
-.site-header {
+/* ===== SCHO CONNECT HEADER FIX ===== */
+
+.sc-header {
+  width: 100%;
   background-color: #21476D;
-  padding: 12px 40px;
+  padding: 14px 24px;
 }
 
-.main-nav {
+.sc-header-inner {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   align-items: center;
 }
 
-.logo-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.sc-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 12px;
+}
+
+.sc-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.logo {
-  height: 28px;
+/* IMPORTANT: Homepage sidebar ko disable karo */
+.sidebar,
+.home-sidebar,
+.left-panel {
+  display: none !important;
 }
-
-.logo-text {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-}
-
