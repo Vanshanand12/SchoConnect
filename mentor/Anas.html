@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="style.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -129,20 +128,56 @@
       object-fit: cover;
       border-radius: 0;
     }
+
+    /* ===== FORCE RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== HEADER FIX (FINAL) ===== */
+.mentor-header {
+  width: 100%;
+  background-color: #21476D;
+  padding: 16px 32px;
+}
+
+.mentor-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.mentor-logo {
+  height: 42px;
+  margin-right: 12px;
+}
+
+.mentor-brand {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ===== BODY SPACING FIX ===== */
+body {
+  background: #f9f9f9;
+}
+
   </style>
 </head>
 
 <body>
   
-<header class="sc-header">
-  <div class="sc-header-inner">
-    <img src="images/logo.png" alt="SchoConnect" class="sc-logo">
-    <a href="index.html" class="sc-title">SchoConnect</a>
+<header class="mentor-header">
+  <div class="mentor-header-inner">
+    <img src="images/logo.png" alt="SchoConnect" class="mentor-logo">
+    <a href="index.html" class="mentor-brand">SchoConnect</a>
   </div>
 </header>
-
-
-
   
   <div class="container">
     <!-- Profile Header -->
