@@ -881,3 +881,34 @@ body {
   color: white;
   font-family: 'Poppins', sans-serif;
 }
+
+
+/* ===== Global Header ===== */
+.site-header {
+  background-color: #21476D;
+  padding: 12px 40px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 28px;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
