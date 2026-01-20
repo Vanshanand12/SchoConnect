@@ -129,31 +129,23 @@
       border-radius: 0;
     }
 
-    /* ===== FORCE RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .mentor-header {
   width: 100%;
   background-color: #21476D;
-  padding: 14px 0;
+  padding: 12px 24px;
 }
 
 .mentor-header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 12px;
+  justify-content: flex-start; /* 👈 LEFT */
+  gap: 10px;
 }
 
 .mentor-logo {
-  height: 36px;
+  height: 34px;
   width: auto;
+  display: block;
 }
 
 .mentor-brand {
@@ -162,13 +154,14 @@
   font-weight: 700;
 }
 
+
   </style>
 </head>
 
 <body>
 <header class="mentor-header">
   <div class="mentor-header-inner">
-    <img src="../images/logo.png" alt="SchoConnect" class="mentor-logo">
+    <img src="new-logo.jpeg" alt="SchoConnect Logo" class="mentor-logo">
     <span class="mentor-brand">SchoConnect</span>
   </div>
 </header>
