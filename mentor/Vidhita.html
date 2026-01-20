@@ -133,10 +133,56 @@
       object-fit: cover;
       border-radius: 0;
     }
+    .mentor-header {
+  width: 100%;
+  background-color: #21476D;
+  padding: 12px 24px;
+}
+
+.mentor-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 👈 LEFT */
+  gap: 10px;
+}
+
+.mentor-logo {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+.mentor-brand {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+   /*Logo Clickable*/
+    .mentor-home-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.mentor-home-link:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
   </style>
 </head>
 
 <body>
+  <header class="mentor-header">
+  <div class="mentor-header-inner">
+    
+     <a href="../index.html" class="mentor-home-link">
+    <img src="../new-logo.jpeg" alt="SchoConnect" class="mentor-logo">
+    <span class="mentor-brand">SchoConnect</span>
+     </a>
+  </div>
+</header>
 
   <div class="container">
 
