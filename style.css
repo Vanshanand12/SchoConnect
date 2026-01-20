@@ -863,3 +863,21 @@ body {
   cursor: pointer;
 }
 
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #21476d; /* same as homepage */
+}
+
+.logo {
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
