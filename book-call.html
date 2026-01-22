@@ -17,15 +17,7 @@
       padding: 0;
       text-align: center;
     }
-
-    header {
-      padding: 20px 40px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      font-weight: 600;
-    }
-
+    
     header a {
      background-color: transparent;   /* or white */
   padding: 30px 20px;
@@ -104,10 +96,8 @@
     }
     .mentor-header {
        background-color: #21476D;   
-      color: white;
-      
+      color: white;   
 }
-
 
 .mentor-header-inner {
   display: flex;
@@ -128,35 +118,70 @@
   font-weight: 700;
 }
 
-   /*Logo Clickable*/
-    .mentor-home-link {
+   .mentor-header {
+  background-color: #21476D;
+  padding: 14px 40px;
+}
+
+.mentor-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* LEFT + RIGHT */
+}
+
+.mentor-logo {
+  height: 34px;
+}
+
+.mentor-brand {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mentor-home-link {
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
 }
 
-.mentor-home-link:hover {
-  opacity: 0.9;
-  cursor: pointer;
+.mentor-nav {
+  display: flex;
+  gap: 30px;
 }
+
+.mentor-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mentor-nav a:hover {
+  color: #f37c1f;
+}
+
   </style>
 </head>
 <body>
-  <header class="mentor-header">
+ <header class="mentor-header">
   <div class="mentor-header-inner">
-    
-     <a href="../index.html" class="mentor-home-link">
-    <img src="new-logo.jpeg" alt="SchoConnect" class="mentor-logo">
-    <span class="mentor-brand">SchoConnect</span>
-     </a>
+
+    <!-- Left: Logo -->
+    <a href="../index.html" class="mentor-home-link">
+      <img src="new-logo.jpeg" alt="SchoConnect" class="mentor-logo">
+      <span class="mentor-brand">SchoConnect</span>
+    </a>
+
+    <!-- Right: Navigation -->
+    <nav class="mentor-nav">
+      <a href="../index.html">The Mentors</a>
+      <a href="../contact.html">Contact Us</a>
+    </nav>
+
   </div>
 </header>
 
-  <header>
-    <a href="../index.html">The Mentors</a>
-    <a href="../contact.html">Contact Us</a>
-  </header>
 
   <h1>Book a 30-minute call with your mentor</h1>
   <p class="subtext">After payment, you’ll be redirected to your mentor’s calendar to pick your perfect time from the available slots 💬</p>
