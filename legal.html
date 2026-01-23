@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+  
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Legal Policies | SchoConnect</title>
   <link rel="stylesheet" href="style.css"/>   
+
+    <style>
+  /* ===== HEADER BAR ===== */
+  .mentor-header {
+    width: 100%;
+    background-color: #21476D;
+    padding: 12px 32px;
+    box-sizing: border-box;
+  }
+
+  .mentor-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* left + right */
+  }
+
+  /* ===== LEFT: LOGO ===== */
+  .mentor-home-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .mentor-logo {
+    height: 34px;
+    width: auto;
+    display: block;
+  }
+
+  .mentor-brand {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* ===== RIGHT: NAV ===== */
+  .mentor-nav {
+    display: flex;
+    gap: 24px;
+  }
+
+  .mentor-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.2s ease;
+  }
+
+  .mentor-nav a:hover {
+    color: #f37c1f;
+  }
+</style>    
 </head>
+  
 <body>
+ <header class="mentor-header">
+  <div class="mentor-header-inner">
+
+    <!-- Left: Logo -->
+   <a href="index.html" class="mentor-home-link">
+  <img src="new-logo.jpeg" alt="SchoConnect" class="mentor-logo">
+  <span class="mentor-brand">SchoConnect</span>
+</a>
+
+
+    <!-- Right: Navigation -->
+    <nav class="mentor-nav">  
+  <a href="index.html">The Mentors</a>
+  <a href="contact.html">Contact Us</a>
+
+    </nav>
+
+  </div>
+</header>  
   <section id="legal-policy">
     <h2>SchoConnect Legal Policies</h2>
 
@@ -61,7 +136,6 @@
     <!-- Company Links -->
     <div class="company-links">
       <h4>COMPANY</h4>
-     <a href="services.html">Services</a>
      <a href="contact.html">Contact Us</a>
      <a href="legal.html">Legal</a>
     </div>
@@ -106,6 +180,7 @@
   
 </body>
 </html>
+
 
 
 
