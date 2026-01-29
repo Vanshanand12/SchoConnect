@@ -222,7 +222,7 @@
       <option>Manya Vaid</option>
       <option>Vidhita Khatri</option>
     </select>
-    <button type="submit">Make Payment ₹1999</button>
+    <button type="button" onclick="makePayment()">Make Payment</button>
   </form>
 
   <p class="slots-title">Available Slots This Week</p>
@@ -294,6 +294,34 @@
 
 <!-- Font Awesome Free CDN for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- RAZOR-PAY-->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<script>
+async function makePayment() {
+    const response = await fetch("razorpay/create_order.php");
+    const order = await response.json();
+
+    var options = {
+        "key": "YOUR_KEY_ID_HERE",
+        "amount": order.amount,
+        "currency": "INR",
+        "name": "SchoConnect",
+        "description": "Mentorship Call Booking",
+        "order_id": order.id,
+        "handler": function (response){
+            alert("Payment Successful 🎉");
+            console.log(response);
+        }
+    };
+
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+}
+</script>
+
   
 </body>
 </html>
