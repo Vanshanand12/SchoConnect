@@ -221,9 +221,13 @@
       <option>Anas Ahmad</option>
       <option>Manya Vaid</option>
       <option>Vidhita Khatri</option>
-    </select>
-    <button type="button" onclick="makePayment()">Make Payment</button>
+    </select>>
   </form>
+
+ <script>
+    document.getElementById("payBtn").addEventListener("click", makePayment);
+ </script>
+
 
   <p class="slots-title">Available Slots This Week</p>
 
@@ -301,6 +305,7 @@
 
 <script>
 async function makePayment() {
+  alert("Payment function called");
   const response = await fetch(
     "https://schoconnectpayment.fwh.is/create-order.php",
     { method: "POST" }
