@@ -224,9 +224,19 @@
     </select>>
   </form>
 
- <script>
-    document.getElementById("payBtn").addEventListener("click", makePayment);
- </script>
+ <div style="text-align:center; margin:40px 0;">
+  <button id="payBtn" style="
+    padding:14px 28px;
+    font-size:16px;
+    background:#21476D;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+  ">
+    Make Payment
+  </button>
+</div>
 
 
   <p class="slots-title">Available Slots This Week</p>
@@ -344,6 +354,10 @@ async function makePayment() {
   var rzp1 = new Razorpay(options);
   rzp1.open();
 }
+  document.getElementById("payBtn").addEventListener("click", function () {
+  alert("Button is working");
+  makePayment();
+});
 </script>
 </body>
 </html>
