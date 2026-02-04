@@ -311,56 +311,39 @@
 
 
   <!-- RAZOR-PAY-->
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
 <script>
 async function makePayment() {
-  console.log("makePayment called");
   alert("Payment function called");
-  const response = await fetch(
-    "https://schoconnectpayment.fwh.is/create-order.php",
-    { method: "POST" }
-  );
 
-  const order = await response.json();
-  
+  const res = await fetch("https://schoconnectpayment.fwh.is/create-order.php", {
+    method: "POST"
+  });
+
+  const order = await res.json();
+  console.log("ORDER:", order);
 
   var options = {
-    "key": "rzp_test_S9NEvhLTCgPX2v", // ONLY key_id
-    "amount": order.amount,
-    "currency": "INR",
-    "name": "SchoConnect",
-    "description": "Mentorship Call Booking",
-    "order_id": order.id,
-    "handler": async function (response) {
+    key: "rzp_test_S9NEvhLTCgPX2v",   // use TEST key
+    amount: order.amount,
+    currency: "INR",
+    name: "SchoConnect",
+    description: "Mentorship Call Booking",
+    order_id: order.id,
 
-        const verifyResponse = await fetch("https://schoconnectpayment.fwh.is/create-order.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body:
-          `razorpay_payment_id=${response.razorpay_payment_id}` +
-          `&razorpay_order_id=${response.razorpay_order_id}` +
-          `&razorpay_signature=${response.razorpay_signature}`
-      })
-         const text = await verifyResponse.text();
-          console.log(text);
-     if (text === "success") {
-        
-       window.location.href = "success.html";
-}
-     else {
-       alert("Payment verification failed");
-}
+    handler: function (paymentResponse) {
+      alert("Payment Successful 🎉");
+      console.log(paymentResponse);
+      window.location.href = "success.html";
+    },
+
+    theme: {
+      color: "#21476D"
     }
   };
 
-  var rzp1 = new Razorpay(options);
-  rzp1.open();
+  var rzp = new Razorpay(options);
+  rzp.open();
 }
-  document.getElementById("payBtn").addEventListener("click", function () {
-  alert("Button is working");
-  makePayment();
-});
 </script>
 </body>
 </html>
