@@ -315,44 +315,25 @@
 
   <!-- Razor-Pay-->
 <script>
-async function makePayment() {
-  try {
-    console.log("Payment function called");
+document.getElementById("payBtn").onclick = function () {
 
-    const orderResponse = await fetch(
-      "https://schoconnectpayment.fwh.is/create-order.php",
-      { method: "POST" }
-    );
+  var options = {
+    key: "rzp_test_S9NEvhLTCgPX2v", // TEST KEY ID
+    amount: 199900, // ₹1999 in paise
+    currency: "INR",
+    name: "SchoConnect",
+    description: "Mentor Call Booking",
 
-    const order = await orderResponse.json();
-    console.log("Order created:", order);
+    handler: function (response) {
+      alert("Payment Successful!");
+      console.log(response);
+      window.location.href = "success.html";
+    }
+  };
 
-    var options = {
-      key: "rzp_test_S9NEvhLTCgPX2v",
-      amount: order.amount,
-      currency: "INR",
-      name: "SchoConnect",
-      description: "Mentor Call Booking",
-      order_id: order.id,
-      handler: function (response) {
-        alert("Payment successful!");
-        console.log(response);
-      }
-    };
-
-    const rzp = new Razorpay(options);
-    rzp.open();
-
-  } catch (error) {
-    console.error("Payment error:", error);
-    alert("Something went wrong");
-  }
-}
-
-document.getElementById("payBtn").addEventListener("click", function (e) {
-  e.preventDefault();
-  makePayment();
-});
+  var rzp = new Razorpay(options);
+  rzp.open();
+};
 </script>
 </body>
 </html>
