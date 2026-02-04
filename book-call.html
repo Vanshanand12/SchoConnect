@@ -313,36 +313,37 @@
   <!-- RAZOR-PAY-->
 <script>
 async function makePayment() {
-  alert("Payment function called");
+  try {
+    console.log("Payment function called");
 
-  const res = await fetch("https://schoconnectpayment.fwh.is/create-order.php", {
-    method: "POST"
-  });
+    const orderResponse = await fetch(
+      "https://schoconnectpayment.fwh.is/create-order.php",
+      { method: "POST" }
+    );
 
-  const order = await res.json();
-  console.log("ORDER:", order);
+    const order = await orderResponse.json();
+    console.log("Order created:", order);
 
-  var options = {
-    key: "rzp_test_S9NEvhLTCgPX2v",   // use TEST key
-    amount: order.amount,
-    currency: "INR",
-    name: "SchoConnect",
-    description: "Mentorship Call Booking",
-    order_id: order.id,
+    var options = {
+      key: "rzp_test_S9NEvhLTCgPX2v",
+      amount: order.amount,
+      currency: "INR",
+      name	per: "SchoConnect",
+      description: "Mentor Call Booking",
+      order_id: order.id,
+      handler: function (response) {
+        alert("Payment successful!");
+        console.log(response);
+      }
+    };
 
-    handler: function (paymentResponse) {
-      alert("Payment Successful 🎉");
-      console.log(paymentResponse);
-      window.location.href = "success.html";
-    },
+    const rzp = new Razorpay(options);
+    rzp.open();
 
-    theme: {
-      color: "#21476D"
-    }
-  };
-
-  var rzp = new Razorpay(options);
-  rzp.open();
+  } catch (error) {
+    console.error("Payment error:", error);
+    alert("Something went wrong");
+  }
 }
 </script>
 </body>
