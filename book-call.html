@@ -221,7 +221,7 @@
       <option>Anas Ahmad</option>
       <option>Manya Vaid</option>
       <option>Vidhita Khatri</option>
-    </select>>
+    </select>
   </form>
 
  <div style="text-align:center; margin:40px 0;">
@@ -310,7 +310,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-  <!-- RAZOR-PAY-->
+  <!-- RAZOR-PAY checkout-->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <!-- Razor-Pay-->
 <script>
 async function makePayment() {
   try {
@@ -345,6 +348,11 @@ async function makePayment() {
     alert("Something went wrong");
   }
 }
+
+document.getElementById("payBtn").addEventListener("click", function (e) {
+  e.preventDefault();
+  makePayment();
+});
 </script>
 </body>
 </html>
