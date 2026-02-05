@@ -205,25 +205,41 @@
   <h1>Book a 30-minute call with your mentor</h1>
   <p class="subtext">After payment, you’ll be redirected to your mentor’s calendar to pick your perfect time from the available slots 💬</p>
 
-  <form>
-    <input type="text" placeholder="Your name" required>
-    <input type="email" placeholder="email@provider.com" required>
-    <input type="tel" placeholder="+91 91234 56789" required>
-    <select required>
-      <option selected disabled>Select Mentor</option>
-      <option>Aditya</option>
-      <option>Harshwardhan</option>
-      <option>Jai Ram Suri</option>
-      <option>Rashmeet Kaur</option>
-      <option>Sambhav Jain</option>
-      <option>Kushagr Grover</option>
-      <option>Kritika Piplani</option>  
-      <option>Anas Ahmad</option>
-      <option>Manya Vaid</option>
-      <option>Vidhita Khatri</option>
-    </select>
-  </form>
+ <form id="bookingForm">
+  <input type="text" id="name" placeholder="Your name" required>
+  <input type="email" id="email" placeholder="email@provider.com" required>
+  <input type="tel" id="phone" placeholder="+91 91234 56789" required>
 
+  <select id="mentor" required>
+    <option value="" selected disabled>Select Mentor</option>
+    <option>Aditya</option>
+    <option>Harshwardhan</option>
+    <option>Jai Ram Suri</option>
+    <option>Rashmeet Kaur</option>
+    <option>Sambhav Jain</option>
+    <option>Kushagr Grover</option>
+    <option>Kritika Piplani</option>  
+    <option>Anas Ahmad</option>
+    <option>Manya Vaid</option>
+    <option>Vidhita Khatri</option>
+  </select>
+</form>
+
+<div style="max-width:420px;margin:0 auto;">
+  <h3>Select a Time Slot</h3>
+
+  <select id="timeSlot" required>
+    <option value="" selected disabled>Select Time Slot</option>
+    <option>Thu, Oct 16 – 4:00 PM</option>
+    <option>Thu, Oct 16 – 4:30 PM</option>
+    <option>Thu, Oct 16 – 5:00 PM</option>
+    <option>Fri, Oct 17 – 4:00 PM</option>
+    <option>Fri, Oct 17 – 4:30 PM</option>
+    <option>Fri, Oct 17 – 5:00 PM</option>
+  </select>
+</div>
+
+  
  <div style="text-align:center; margin:40px 0;">
   <button id="payBtn" style="
     padding:14px 28px;
@@ -315,25 +331,35 @@
 
   <!-- Razor-Pay-->
 <script>
-document.getElementById("payBtn").onclick = function () {
+document.getElementById("payBtn").addEventListener("click", function () {
+
+  const name = document.querySelector('input[placeholder="Your name"]').value.trim();
+  const email = document.querySelector('input[type="email"]').value.trim();
+  const phone = document.querySelector('input[type="tel"]').value.trim();
+  const mentor = document.querySelector("select").value;
+  const slot = document.getElementById("timeSlot").value;
+
+  if (!name || !email || !phone || mentor === "Select Mentor" || !slot) {
+    alert("Please fill all details before payment.");
+    return;
+  }
 
   var options = {
-    key: "rzp_test_S9NEvhLTCgPX2v", // TEST KEY ID
-    amount: 199900, // ₹1999 in paise
+    key: "rzp_test_S9NEvhLTCgPX2v",
+    amount: 199900,
     currency: "INR",
     name: "SchoConnect",
     description: "Mentor Call Booking",
 
     handler: function (response) {
       alert("Payment Successful!");
-      console.log(response);
       window.location.href = "success.html";
     }
   };
 
   var rzp = new Razorpay(options);
   rzp.open();
-};
+});
 </script>
 </body>
 </html>
