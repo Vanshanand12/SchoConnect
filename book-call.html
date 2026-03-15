@@ -210,22 +210,19 @@
   <input type="email" id="email" placeholder="email@provider.com" required>
   <input type="tel" id="phone" placeholder="+91 91234 56789" required>
 
-  <select id="mentor" required>
-    <option value="" selected disabled>Select Mentor</option>
-    <option>Aditya</option>
-    <option>Harshwardhan</option>
-    <option>Jai Ram Suri</option>
-    <option>Rashmeet Kaur</option>
-    <option>Sambhav Jain</option>
-   <!-- <option>Kushagr Grover</option>
-    <option>Kritika Piplani</option> --> 
-    <option>Anas Ahmad</option>
-    <option>Manya Vaid</option>
-    <option>Vidhita Khatri</option>
-  </select>
+  <select id="mentorSelect" required>
+    <option selected disabled>Select Mentor</option>
+    <option value="aditya">Aditya</option>
+    <option value="harsh">Harshwardhan</option>
+    <option value="jai">Jai Ram Suri</option>
+    <option value="rashmeet">Rashmeet Kaur</option>
+    <option value="manya">Manya Vaid</option>
+    <option value="vidhita">Vidhita Khatri</option>
+    
+</select> 
 </form>
 
-<div style="max-width:420px;margin:0 auto;">
+  <div id="slotContainer"></div>
   <h3>Select a Time Slot</h3>
 
   <select id="timeSlot" required>
@@ -359,6 +356,51 @@ document.getElementById("payBtn").addEventListener("click", function () {
 
   var rzp = new Razorpay(options);
   rzp.open();
+});
+</script>
+  <script>
+const slots = {
+
+aditya: [
+"Mon - 4:00 PM",
+"Mon - 4:30 PM",
+"Wed - 5:00 PM"
+],
+
+harsh: [
+"Tue - 6:00 PM",
+"Thu - 6:30 PM"
+],
+
+jai: [
+"Fri - 3:00 PM",
+"Sat - 4:00 PM"
+],
+
+rashmeet: [
+"Mon - 7:00 PM",
+"Wed - 7:30 PM"
+]
+
+};
+
+document.getElementById("mentorSelect").addEventListener("change", function() {
+
+let mentor = this.value;
+let container = document.getElementById("slotContainer");
+
+container.innerHTML = "";
+
+slots[mentor].forEach(function(slot){
+
+let btn = document.createElement("button");
+btn.textContent = slot;
+btn.classList.add("slot-btn");
+
+container.appendChild(btn);
+
+});
+
 });
 </script>
 </body>
