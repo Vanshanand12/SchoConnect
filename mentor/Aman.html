@@ -74,23 +74,37 @@ display:flex;
 align-items:center;
 }
 
-.tags{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-margin-top:20px;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 10px 0;
 }
 
-.tags span{
-background:white;
-color:#21476d;
-font-weight:600;
-padding:10px 18px;
-border:2px solid #21476d;
-border-radius:30px;
+.tags span {
+  display: inline-block;
+  background: #ffffff;
+  color: #21476d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 18px;
+  border: 2px solid #21476d;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(33, 71, 109, 0.15);
+  transition: all 0.25s ease;
+  cursor: default;
 }
 
+.tags span:hover {
+  background: #21476d;
+  color: #ffffff;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(33, 71, 109, 0.3);
+}
+  
 .talk-btn{
 display:block;
 width:fit-content;
@@ -366,10 +380,39 @@ follow their passions, and create a meaningful story for their lives.
 <a href="../contact.html">Contact Us</a>
 
 <a href="../legal.html">Legal</a>
-
-
 </div>
 
+  
+    <!-- Social -->
+    <div>
+      <h4>SOCIAL</h4>
+
+      <a href="https://www.instagram.com/scho.connect/" style="margin: 0 10px; color: black; font-size: 20px;">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/company/108567249/" style="margin: 0 10px; color: black; font-size: 20px;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h4>NEWSLETTER</h4>
+
+      <p>Subscribe for updates on products, mentors, hiring, and resources.</p>
+
+      <input type="email" placeholder="email@provider.com"
+             style="padding: 8px; border: none; border-radius: 4px; width: 200px;">
+
+      <br>
+
+      <button style="padding: 8px 15px; margin-top: 8px; background: orange; color: white; border: none; border-radius: 4px;">
+        Subscribe
+      </button>
+    </div>
+
+  </div>
 
 </footer>
 
